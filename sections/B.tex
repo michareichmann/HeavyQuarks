@@ -1,7 +1,26 @@
+\begin{frame}{The $\Upupsilon$-Meson}
+ 
+	\begin{itemize}
+		\item bound state of \textbf{b$\bar{\z{b}}$}\vspace*{10pt}
+		\item decay channels:
+	\end{itemize}
+	\begin{figure}
+		\subfig[.37]{diag2}{.25}{\SI{82}{\%}}
+		\subfig[.26]{diag1}{.25}{\SI{9}{\%}}
+		\subfig[.35]{diag3}{.25}{\SI{2}{\%}}
+	\end{figure}
+	\begin{itemize}
+		\item mostly decay into gluons which hadronise \ra signals mostly caused by hadrons
+	\end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% FRAME 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Discovery}
 \begin{frame}{Discovery Paper}
 
-	\fig{BDis}{.85}
+	\fig{BDis}{.84}
 	
 \end{frame}
 
@@ -22,8 +41,8 @@
 	
 	\begin{minipage}[c][.15\textheight]{\textwidth}
 		\begin{itemize}
-			\only<1>{\item  } 
-			\only<2>{\item \SI{400}{\mega\electronvolt} proton beam shot on narrow target (Pt/Cu) with \SI{30}{\%} interaction length} 
+% 			\only<1>{ } 
+			\only<2>{\item \SI{400}{\giga\electronvolt} proton beam shot on narrow target (Pt/Cu) with \SI{30}{\%} interaction length} 
 			\only<3>{\item hadron filter out of Be with 18 interaction length (\SIrange{3}{5}{^{\circ}} horiz. and \SI{\pm.5}{^{\circ}} vert.)}
 			\only<4>{\item heavy metal (Steel, W) shielding to minimise particle leakage}
 			\only<5>{\item tungsten beam dump} 
@@ -41,14 +60,145 @@
 %%%%%%%%%%%%%%%%%%%%%%%% FRAME 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Results}
  
-	\fig{BRes1}{.6}
+	\begin{minipage}[c][.8\textheight]{.78\textwidth}
+		\begin{itemize}
+			\itemfill
+			\item statistically significant enhancement at \SI{9.5}{\giga\electronvolt} $\upmu^{+}\upmu^{-}$ mass
+			\item solid line background fit
+			\begin{itemize}
+				\item using side band fit method
+				\item excluding the data from \SIrange{8.5}{10.6}{\giga\electronvolt} 
+				\item fit smooth continuum with
+				\begin{equation*} \dfrac{\z{d}^2\upsigma}{\z{dmdy}} = \z{A}\mathrm{e}^{-\z{bm}} \end{equation*}
+			\end{itemize}
+			\item fit expects 350 events in excluded region but 770 events in data
+			\item bump wider than resolution of detector (FWHM: \SI{.5\pm.1}{\giga\electronvolt})
+			\item simple Gaussian fit of background subtracted data yields:
+			{\usebeamercolor[fg]{title}\begin{align*}
+				\z{\textbf{m}} &= \textbf{\SI{9.54\pm.04}{\giga\electronvolt}}\\
+				\z{\textbf{FWHM}} &= \textbf{\SI{1.16\pm.09}{\giga\electronvolt}}
+			\end{align*}}
+			\item same goodness of fit with two Gaussians with fixed with of detector resolution \ra later $\Upupsilon$ and $\Upupsilon'$
+
+		\end{itemize}
+
+	\end{minipage}
+	\begin{minipage}{.2\textwidth}
+		\figc{BRes1}{.69}{\scriptsize{dimuon production cross section as a function of invariant mass}}
+	\end{minipage}
+
 	
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%% FRAME 4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Error Reduction}
- 
-	\fig{BRes}{.6}
+\begin{frame}{Verification}
+
+	\begin{itemize}\itemfill
+		\item re-measurement of the muon momentum by the second magnet and by PCW at the centre of the first magnet
+		\begin{itemize}
+			\item avoid misidentified \ch{\ensuremath{\uppsi}->\ensuremath{\upmu^+}+\ensuremath{\upmu^-}} at high mass
+			\item confirmed by clear separation of the $\uppsi$ and $\uppsi'$ in the Figure
+		\end{itemize}
+		\item study of various subsets of the data with different magnetic fields
+		\begin{itemize}
+			\item check for apparatus bias
+		\end{itemize}
+	\end{itemize}
+	
+	\begin{minipage}{0.58\textwidth}
+		\begin{itemize}
+			\item study of data with and without target
+			\begin{itemize}
+				\item rule out signal created from beam dump
+			\end{itemize}
+		\end{itemize}
+	\end{minipage}
+	\begin{minipage}{.4\textwidth}
+		\fig{BRes}{.4}
+	\end{minipage}\vspace*{-20pt}
+
 	
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%% FRAME 5 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Further Experiments}
+\begin{frame}{PLUTO Collaboration Paper}
+
+	\fig{BPluto}{.84}
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%% FRAME 6 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{PLUTO Detector}
+ 
+	\vspace*{-10pt}
+	\only<1>{\fig{PlutoDet}{.72}}
+	\only<2>{\fig{PlutoDet5}{.72}}
+	\only<3>{\fig{PlutoDet1}{.72}}
+	\only<4>{\fig{PlutoDet2}{.72}}
+	\only<5>{\fig{PlutoDet3}{.72}}
+	\only<6>{\fig{PlutoDet4}{.72}}
+	
+	\begin{minipage}[c][.15\textheight]{\textwidth}
+		\begin{itemize}
+% 			\only<1>{\item  } 
+			\only<2>{\item up to \SI{5}{\giga\electronvolt} electron beams collided in the centre} 
+			\only<3>{\item cylindrical proportional wire chamber with \SI{92}{\%} coverage}
+			\only<3>{\item tracking and momentum measurement}
+			\only<4>{\item cylindrical array of shower counters with \SI{8.6}{radiation length} and \SI{94}{\%} coverage}
+			\only<4>{\item calorimeter to measure the full energy}
+			\only<5>{\item magnet with \SI{1.69}{\tesla}}
+			\only<6>{\item muon chambers}
+		\end{itemize}
+	\end{minipage}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%% FRAME 7 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Results}
+	
+	\begin{minipage}[c][.4\textheight]{0.65\textwidth}
+		\begin{itemize}\itemfill
+			\item acquiring cross section by scanning $\sqrt{s}$ in steps of either \SI{5}{\giga\electronvolt} or \SI{10}{\giga\electronvolt}
+			\item only considering hadronic decay products
+			\item remove 1/s background
+			\item reduce cosmic ray background by use of bunch crossing time
+		\end{itemize}
+	\end{minipage}
+	\begin{minipage}{.31\textwidth}
+		\figc{BPlutoRes}{.3}{\footnotesize{total cross section for hadron production}}
+	\end{minipage}
+	
+	\begin{itemize}\itemfill
+		\item remove QED events with coplanarity cut and shower recognition
+		\item remove beam gas interaction by cuts on visible energy and missing mass
+		\item fitting data with Gaussian yields:
+		{\usebeamercolor[fg]{title}\begin{align*}
+			\z{\textbf{m}} &= \textbf{\SI{9.46\pm.01}{\giga\electronvolt}}\\
+			\mathbf{\upsigma_{\z{Gauss}}} &= \textbf{\SI{7.8\pm.9}{\mega\electronvolt}}
+		\end{align*}}
+	\end{itemize}\vspace*{-20pt}
+
+	
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%% FRAME 8 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Charge}
+	
+	\begin{itemize}\itemfill
+		\item relation of total hadronic cross section to resonance mass and the resonance width
+		\begin{equation*} \int\upsigma_{\z{h}}\z{dM} = \frac{6\uppi^{2}}{{\z{M}_{\z{R}}}^{2}}\frac{\Upgamma_{\z{ee}}\Upgamma_{\z{h}}}{\Upgamma_{\z{tot}}} \end{equation*}
+		\item standard assumption: $\Upgamma_{\z{tot}}\approx\Upgamma_{\z{h}}$ \ra direct measurement of $\Upgamma_{\z{ee}}$
+		{\usebeamercolor[fg]{title}\begin{equation*} \Upgamma_{\z{ee}} = \SI{1.3\pm.4}{\kilo\electronvolt} \end{equation*}}\vspace*{-20pt}
+		\item theoretical predictions from the same model:
+		\begin{center}
+			\begin{tabular}{c|c|c}
+						\multirow{2}{*}{Decay Mode}	& \multicolumn{2}{c}{Width [\SI{}{\kilo\electronvolt}]}\\\cline{2-3}
+													& $\z{e} = \pm\sfrac{1}{3}$	& $\z{e} = \pm\sfrac{2}{3}$\\\hline
+						$\upmu^{+}\upmu^{-}$ 		& \SI{.70\pm.09}{} 	& \SI{2.8\pm.4}{}
+			\end{tabular}		             
+		\end{center}\vspace*{10pt}
+		\item \usebeamercolor[fg]{title}\textbf{implies charge of -\sfrac{1}{3} for the bottom quark}
+
+	\end{itemize}
+
+	
+\end{frame}
