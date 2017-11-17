@@ -9,8 +9,9 @@
 		\subfig[.26]{diag1}{.25}{\SI{9}{\%}}
 		\subfig[.35]{diag3}{.25}{\SI{2}{\%}}
 	\end{figure}
-	\begin{itemize}
+	\begin{itemize}\itemfill
 		\item mostly decay into gluons which hadronise \ra signals mostly caused by hadrons
+		\item leptonic decay splits up into \SIrange{2.5}{3}{\%} for each e, $\upmu$ and $\uptau$
 	\end{itemize}
 
 \end{frame}
@@ -41,7 +42,7 @@
 	
 	\begin{minipage}[c][.15\textheight]{\textwidth}
 		\begin{itemize}
-% 			\only<1>{ } 
+			\only<1>{\item[] } 
 			\only<2>{\item \SI{400}{\giga\electronvolt} proton beam shot on narrow target (Pt/Cu) with \SI{30}{\%} interaction length} 
 			\only<3>{\item hadron filter out of Be with 18 interaction length (\SIrange{3}{5}{^{\circ}} horiz. and \SI{\pm.5}{^{\circ}} vert.)}
 			\only<4>{\item heavy metal (Steel, W) shielding to minimise particle leakage}
@@ -56,21 +57,38 @@
 	\end{minipage}
 
 \end{frame}
-
 %%%%%%%%%%%%%%%%%%%%%%%% FRAME 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Intermezzo: Sideband Fit}
+ 
+	\vspace*{-10pt}
+	\only<1>{\hspace*{-20pt}\figp{SB1}{.60}}
+	\only<2>{\hspace*{-20pt}\figp{SB2}{.60}}
+	\only<3>{\hspace*{-20pt}\figp{SB3}{.60}}
+	\only<4>{\hspace*{-20pt}\figp{SB4}{.60}}
+	\only<5>{\hspace*{-20pt}\figp{SB5}{.60}}
+	\only<6>{\hspace*{-20pt}\figp{SB6}{.60}}
+	
+	\begin{minipage}[c][.15\textheight]{\textwidth}
+		\begin{itemize}
+			\only<1>{\item typical shape of data in particle physics: continuous background with a small bump} 
+			\only<2>{\item background extraction with a fit of the whole set does not work well} 
+			\only<3>{\item divide the data set in a signal and two background parts (\ra side bands)}
+			\only<4>{\item fitting just the side bands yields a much better result}
+			\only<5>{\item getting the signal distribution by subtracting the full data set by the fit} 
+			\only<6>{\item get width and position of the signal by a fit}
+		\end{itemize}
+	\end{minipage}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%% FRAME 4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Results}
  
 	\begin{minipage}[c][.8\textheight]{.78\textwidth}
 		\begin{itemize}
 			\itemfill
 			\item statistically significant enhancement at \SI{9.5}{\giga\electronvolt} $\upmu^{+}\upmu^{-}$ mass
-			\item solid line background fit
-			\begin{itemize}
-				\item using side band fit method
-				\item excluding the data from \SIrange{8.5}{10.6}{\giga\electronvolt} 
-				\item fit smooth continuum with
-				\begin{equation*} \dfrac{\z{d}^2\upsigma}{\z{dmdy}} = \z{A}\mathrm{e}^{-\z{bm}} \end{equation*}
-			\end{itemize}
+			\item solid line background fit using side band method
+			\begin{equation*} \dfrac{\z{d}^2\upsigma}{\z{dmdy}} = \z{A}\mathrm{e}^{-\z{bm}} \end{equation*}
 			\item fit expects 350 events in excluded region but 770 events in data
 			\item bump wider than resolution of detector (FWHM: \SI{.5\pm.1}{\giga\electronvolt})
 			\item simple Gaussian fit of background subtracted data yields:
@@ -90,23 +108,27 @@
 	
 \end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%% FRAME 4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% FRAME 5 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Verification}
 
 	\begin{itemize}\itemfill
+		\item same sign dimuon spectrum ($\upmu^{+}\upmu^{+}$ and $\upmu^{-}\upmu^{-}$)
+		\begin{itemize}
+			\item upper limit on combined effects of accidental coincidences and hadronic decays
+		\end{itemize}
 		\item re-measurement of the muon momentum by the second magnet and by PCW at the centre of the first magnet
 		\begin{itemize}
 			\item avoid misidentified \ch{\ensuremath{\uppsi}->\ensuremath{\upmu^+}+\ensuremath{\upmu^-}} at high mass
 			\item confirmed by clear separation of the $\uppsi$ and $\uppsi'$ in the Figure
 		\end{itemize}
-		\item study of various subsets of the data with different magnetic fields
-		\begin{itemize}
-			\item check for apparatus bias
-		\end{itemize}
 	\end{itemize}
 	
-	\begin{minipage}{0.58\textwidth}
-		\begin{itemize}
+	\begin{minipage}[c][.35\textheight]{0.58\textwidth}
+		\begin{itemize}\itemfill
+			\item study of various subsets of the data with different magnetic fields
+			\begin{itemize}
+				\item check for apparatus bias
+			\end{itemize}
 			\item study of data with and without target
 			\begin{itemize}
 				\item rule out signal created from beam dump
@@ -120,7 +142,7 @@
 	
 \end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%% FRAME 5 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% FRAME 6 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Further Experiments}
 \begin{frame}{PLUTO Collaboration Paper}
 
@@ -128,7 +150,7 @@
 	
 \end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%% FRAME 6 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% FRAME 7 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{PLUTO Detector}
  
 	\vspace*{-10pt}
@@ -141,7 +163,7 @@
 	
 	\begin{minipage}[c][.15\textheight]{\textwidth}
 		\begin{itemize}
-% 			\only<1>{\item  } 
+			\only<1>{\item[]  } 
 			\only<2>{\item up to \SI{5}{\giga\electronvolt} electron beams collided in the centre} 
 			\only<3>{\item cylindrical proportional wire chamber with \SI{92}{\%} coverage}
 			\only<3>{\item tracking and momentum measurement}
@@ -153,7 +175,7 @@
 	\end{minipage}
 
 \end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%% FRAME 7 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% FRAME 8 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Results}
 	
 	\begin{minipage}[c][.4\textheight]{0.65\textwidth}
@@ -161,7 +183,7 @@
 			\item acquiring cross section by scanning $\sqrt{s}$ in steps of either \SI{5}{\giga\electronvolt} or \SI{10}{\giga\electronvolt}
 			\item only considering hadronic decay products
 			\item remove 1/s background
-			\item reduce cosmic ray background by use of bunch crossing time
+			\item reduce cosmic ray background by use of bunch crossing time (bunched beam structure vs continuous background)
 		\end{itemize}
 	\end{minipage}
 	\begin{minipage}{.31\textwidth}
@@ -180,7 +202,7 @@
 
 	
 \end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%% FRAME 8 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% FRAME 9 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Charge}
 	
 	\begin{itemize}\itemfill
