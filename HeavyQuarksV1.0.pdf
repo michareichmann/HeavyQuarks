@@ -1,0 +1,43 @@
+% BEGIN PREAMBEL
+\documentclass[9pt, xcolor=dvipsnames]{beamer}
+\usepackage[british]{babel}
+\usepackage{multimedia}
+\input{extrapackages}
+\input{newcommands}
+\input{settings}
+
+\title[Heavy Quarks]{The Discovery of the Heavy Quarks}
+\subtitle{Experimental Foundations of Particle Physics}
+% END PREAMBEL
+
+\begin{document}
+
+% ============= TITLE PAGE =============
+\include{TitlePage}
+
+% ============= TABLE OF CONTENTS ======
+\begin{frame}%[allowframebreaks]
+	\frametitle{Table of contents}
+	\tableofcontents[hideallsubsections]   % [pausesections]
+\end{frame}
+
+% ============= 1 =============
+\section{Introduction}
+\include{Intro}
+
+% ============= 2 =============
+\section{The Beauty Quark}
+\include{B}
+
+% ============= 3 =============
+\section{The Truth Quark}
+\include{T}
+
+
+% ============= CONCLUSION =============
+\section{Conclusion}
+\include{Conclusion}
+
+% DOCUMENT END
+\end{document}
+
