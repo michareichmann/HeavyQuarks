@@ -28,15 +28,15 @@
 	\begin{itemize}\itemfill
 		\item estimate on $\z{m}_{\z{t}}$ in 1994: \SI{\sim180}{\giga\electronvolt}
 		\item prior to discovery: behaviour completely predicted by SM
-		\item $\z{m}_{\z{t}} > \z{m}_{\z{W}}$ \ra main decay channel (\SI{\sim95}{\%}):\ka{\usebeamercolor[fg]{title}\textbf{t\ch{->}$\z{W}^+\z{b}$}}
+		\item $\z{m}_{\z{t}} > \z{m}_{\z{W}}$ \ra main decay channel (\SI{\sim96}{\%}):\ka{\usebeamercolor[fg]{title}\textbf{t\ch{->}$\z{W}^+\z{b}$}}
 		\begin{equation*} \Upgamma_{\z{t}} = \frac{\z{G}_{\z{F}}\z{m}_{\z{t}}^{3}}{8\uppi\sqrt{2}}\left(1 - \frac{\z{m}_{\z{W}}^{2}}{\z{m}_{\z{t}}^{2}}\right)^{2}\left(1 + 2\frac{\z{m}_{\z{W}}^{2}}{\z{m}_{\z{t}}^{2}}\right)\end{equation*}
 		\item width for the expected mass: \SI{\sim1}{\giga\electronvolt} \ra decay before hadronisation
 	\end{itemize}
 	
 	\begin{figure}\vspace*{-10pt}
 		\centering
-		\subfig[.3]{tWbq}{.25}{\SI{\sim60}{\%}}
-		\subfig[.3]{tWbl}{.25}{\SI{\sim40}{\%}}
+		\subfig[.3]{tWbq}{.25}{\SI{\sim67}{\%}}
+		\subfig[.3]{tWbl}{.25}{\SI{\sim33}{\%}}
 	\end{figure}\vspace*{-10pt}
 	
 	\begin{itemize}\itemfill
@@ -75,8 +75,33 @@
 \begin{frame}{B-Tagging}
 
 	\begin{itemize}\itemfill
-		\item how to discriminate b-jets from other jets?
+		\item most jets from light partons (u,d,s) or gluons
+		\item lower rates from c, and b quarks
+		\item interesting physics from b \ra top, higgs, supersymmetry or new phenomena
+		\item b longer lifetime than other partons
+		\item look for secondary vertices (away from primary vertex \ra interaction point)
+		\item first reconstruct primary vertex:
+		\begin{itemize}
+			\item cluster all tracks together and determine likelihood they origin from common vertex
+			\item vertex with highest p$_{\z{T}}$ = primary vertex
+		\end{itemize}
+		
 	\end{itemize}
+	\begin{minipage}[c][.22\textheight]{.5\textwidth}
+		\begin{itemize}
+			\item background for secondary vertices (mostly from light flavoured jets)
+			\begin{itemize}
+				\item K-short Meson
+				\item lambda Baryon 
+				\item photon conversion 
+			\end{itemize}
+		\end{itemize}
+	\end{minipage}
+	\begin{minipage}{.45\textwidth}
+		\fig{BTag}{.4}
+	\end{minipage}
+
+
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%% FRAME 4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -145,9 +170,13 @@
 		\item tagging efficiency: \SI{42\pm5}{\%}
 	\end{itemize}
 	
-	\begin{minipage}[c][.30\textheight]{.64\textwidth}
+	\begin{minipage}[c][.35\textheight]{.64\textwidth}
 	 	\begin{itemize}\itemfill
-			\item backgrounds from recoil of heavy quark pairs against W and mistags
+			\item backgrounds:
+			\begin{itemize}
+				\item recoil of heavy quark pairs against W 
+				\item mistags
+			\end{itemize}
 	 	 	\item for $\z{W}+\ge3$ jets: observation of \SI{27}{tags} with bg of \SI{6.7\pm2.1}{tags}
 	 	 	\item decay lifetime of SVX tags agrees well with MC
 	 	\end{itemize}
@@ -160,7 +189,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%% FRAME 11 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Dilepton Channel}
 	
-	\begin{minipage}[c][.30\textheight]{.64\textwidth}
+	\begin{minipage}[c][.35\textheight]{.64\textwidth}
 		\begin{itemize}\itemfill 
 			\item major backgrounds:
 			\begin{itemize}
@@ -169,10 +198,72 @@
 				\item misidentified hadrons
 				\item WW, b$\overline{\z{b}}$
 			\end{itemize}
+			\item first three bg calculated by data and last two by MC
 		\end{itemize}
 	\end{minipage}
 	\begin{minipage}{.33\textwidth}
 		\fig{DrellYan}{.3}
 	\end{minipage}
+	
+	\begin{itemize}\itemfill
+		\item cuts:
+		\begin{itemize}
+			\item $\cancel{\z{E}}_{\z{T}}\ge\SI{10}{\giga\electronvolt}$
+			\item number of jets $\ge2$
+		\end{itemize}
+		\item reduces Drell-Yan bg (very little $\cancel{\z{E}}_{\z{T}}$)
+		\item correct for jet energy mismeasurement
+	\end{itemize}
 
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%% FRAME 12 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Results}
+
+	\begin{table}
+		\centering
+		\begin{tabular}{lccc}
+			\hline\hline
+			\textbf{Channel}		&	\textbf{SVX}	& \textbf{SLT}		& \textbf{Dilepton}	\\\hline
+			Observed				&	\SI{27}{tags}	& \SI{23}{tags}		& \SI{6}{events}	\\\hline
+			Expected background		&	\SI{6.7\pm2.1}{}& \SI{15.4\pm2.0}{}	& \SI{1.3\pm0.3}{}	\\\hline\\[-10pt]
+			Background probability	&	\SI{2e-5}{}		& \SI{6e-2}{}		& \SI{3e-3}{}		\\\hline\hline
+		\end{tabular}
+	\end{table}
+
+	\begin{itemize}\itemfill
+		\item combined likelihood of the background fluctuating up: \SI{1e-6}{} (\SI{4.8}{\upsigma})
+	\end{itemize}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%% FRAME 13 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Mass Reconstruction}
+	
+	\begin{itemize}\itemfill
+		\item kinematically mass reconstruction by use of single lepton + 4 jet events
+		\item \ttb\ch{->}WbW$\overline{\z{b}}$\ch{->}$\z{q}\overline{\z{q}}$b$\ell\upnu\overline{\z{b}}$
+		\item predicted mix of \SI{30}{\%} \ttb\ and \SI{70}{\%} W + jets bg (yellow)
+		\item reducing bg by applying SVX and SLT tags
+		\item get best top mass by using MC with W + jets bg and varying the top mass
+	\end{itemize}
+	
+	\begin{figure}\vspace*{-5pt}
+		\centering
+		\subfig{CDFRes2}{.4}{before b-tagging}
+		\subfig{CDFRes3}{.4}{after b-tagging}
+	\end{figure}\vspace*{-20pt}
+	
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%% FRAME 13 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Combined Results}
+	
+	\begin{itemize}\itemfill
+		\item combined signal size and mass distribution
+		\item probability for and upward fluctuation of the bg: 
+		{\usebeamercolor[fg]{title}\begin{equation*} \z{\textbf{P}}_{\z{\textbf{c}}} = \textbf{\SI{3.7e-7}{} (\SI{5.0}{\upsigma})} \end{equation*}}
+		\item reconstructed mass:
+		{\usebeamercolor[fg]{title}\begin{equation*} \z{\textbf{m}}_{\z{\textbf{top}}} = \textbf{\SI[parse-numbers=false]{176\pm8\pm10}{\giga\electronvolt\per c^2}} \end{equation*}}
+		\item cross section:
+		{\usebeamercolor[fg]{title}\begin{equation*} \mathbf{\upsigma}_{\z{\textbf{t}}\overline{\z{\textbf{t}}}} = \textbf{6.8}^{\textbf{+3.6}}_{\textbf{-2.4}}\, \z{\textbf{pb}} \end{equation*}}
+	\end{itemize}
+	
 \end{frame}
