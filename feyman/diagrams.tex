@@ -154,4 +154,38 @@ c -- [fermion] f3 [particle=\(q\)],
 
   \end{feynman}
 \end{tikzpicture}\\
+\feynmandiagram [horizontal=a to b, layered layout, baseline=(i1.base)] {
+  i1 [particle=\(Z\)] -- [boson] a [dot] 
+  -- [fermion,half left,edge label=\(t\)] b [dot]
+  -- [fermion,half left,edge label=\(\overline t\)] a,
+  b -- [boson] f1 [particle=\(Z\)]
+};\\
+\feynmandiagram [horizontal=a to b, layered layout, baseline=(i1.base)] {
+  i1 [particle=\(W^+\)] -- [boson] a [dot] 
+  -- [fermion,half left,edge label=\(t\)] b [dot]
+  -- [fermion,half left,edge label=\(\overline b\)] a,
+  b -- [boson] f1 [particle=\(W^+\)]
+};\\
+\feynmandiagram [horizontal=a to b, layered layout, baseline=(i1.base)] {
+  i1 [particle=\(Z\)] -- [boson] a [dot] 
+  -- [scalar,half left,edge label=\(H\)] b [dot]
+  -- [scalar,half left,edge label=\(H\)] a,
+  b -- [boson] f1 [particle=\(Z\)]
+};\\
+\newpage
+\feynmandiagram [horizontal=a to b] {
+	i1 -- [gluon] a [dot] -- [gluon] i2,
+	a -- [gluon] b [dot],
+	f1 [particle=\(\overline t\)] -- [fermion] b -- [fermion] f2 [particle=\(t\)],
+};\\
+\feynmandiagram [horizontal=a to b] {
+	i1 [particle=\(q\)] -- [fermion] a [dot] -- [fermion] i2 [particle=\(\overline q\)],
+	a -- [gluon] b [dot],
+	f1 [particle=\(\overline t\)] -- [fermion] b -- [fermion] f2 [particle=\(t\)],
+};\\
+\feynmandiagram[vertical'=a to b, baseline=(a)]{
+        i1 -- [gluon] a [dot] -- [anti fermion] f1 [particle=\(\overline t\)] ,
+        a -- [fermion] b [dot],
+        i2 -- [gluon] b -- [fermion] f2 [particle=\(t\)]
+    };
 \end{document}

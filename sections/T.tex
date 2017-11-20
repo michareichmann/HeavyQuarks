@@ -17,16 +17,43 @@
 		\item many new accelerator could only push limits higher:
 		\item TRISTAN ($e^+e^-$) at KEK (Tsukuba, Japan) with $\sqrt{s} = \SI{61.4}{\giga\electronvolt}$ \ra \SI{30.2}{\giga\electronvolt}
 		\item Sp$\overline{\z{p}}$S at CERN with $\sqrt{s} = \SI{630}{\giga\electronvolt}$ \ra \SI{69}{\giga\electronvolt}
-		\item SLC ($e^+e^-$) at Stanford and LEP ($e^+e^-$) at CERN \ra $\sfrac{1}{2} \z{m}_{\z{t}}$
+		\item SLC ($e^+e^-$) at Stanford and LEP ($e^+e^-$) at CERN \ra $\sfrac{1}{2} \z{m}_{\z{Z}}$ (not seen in Z\ch{->}$\z{t}\overline{\z{t}}$)
 		\item hadron collider needed (\ra Tevatron)
 	\end{itemize}
 	
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%% FRAME 0 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Estimated Mass}
+
+	\begin{itemize}\itemfill
+		\item using radiative corrections of the W, Z bosons:
+	\end{itemize}
+	
+	\begin{figure}\vspace*{-10pt}
+		\centering
+		\subfig[.3]{TMass1}{.2}{$\sim\z{m}_{\z{t}}^2$}
+		\subfig[.3]{TMass2}{.2}{$\sim\z{m}_{\z{t}}^2$}
+		\subfig[.3]{TMass3}{.2}{$\sim\z{ln}\left(\z{m}_{\z{H}}^2\right)$}
+	\end{figure}\vspace*{-10pt}
+	
+	\begin{minipage}[c][.35\textheight]{.6\textwidth}
+		\begin{itemize}\itemfill
+			\item weak dependence on $\z{m}_{\z{H}}$
+			\item get estimate on $\z{m}_{\z{t}}$ by measuring the $\z{m}_{\z{W}}$ and $\z{m}_{\z{Z}}$
+			\item fit all available electroweak data
+			\item estimate in 1994: \SI{\sim180}{\giga\electronvolt}
+		\end{itemize}
+	\end{minipage}
+	\begin{minipage}{.35\textwidth}
+		\fig{TMass}{.5}
+	\end{minipage}
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%% FRAME 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Decay Channels (1)}
 
 	\begin{itemize}\itemfill
-		\item estimate on $\z{m}_{\z{t}}$ in 1994: \SI{\sim180}{\giga\electronvolt}
+% 		\item estimate on $\z{m}_{\z{t}}$ in 1994: \SI{\sim180}{\giga\electronvolt}
 		\item prior to discovery: behaviour completely predicted by SM
 		\item $\z{m}_{\z{t}} > \z{m}_{\z{W}}$ \ra main decay channel (\SI{\sim96}{\%}):\ka{\usebeamercolor[fg]{title}\textbf{t\ch{->}$\z{W}^+\z{b}$}}
 		\begin{equation*} \Upgamma_{\z{t}} = \frac{\z{G}_{\z{F}}\z{m}_{\z{t}}^{3}}{8\uppi\sqrt{2}}\left(1 - \frac{\z{m}_{\z{W}}^{2}}{\z{m}_{\z{t}}^{2}}\right)^{2}\left(1 + 2\frac{\z{m}_{\z{W}}^{2}}{\z{m}_{\z{t}}^{2}}\right)\end{equation*}
@@ -44,11 +71,34 @@
 	\end{itemize}
 
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%% FRAME 1-1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Top Production}
+
+	\begin{itemize}\itemfill
+		\item top mostly pair produced via two processes:
+		\begin{itemize}
+			\item $\z{q}\overline{\z{q}}$\ch{->}$\z{t}\overline{\z{t}}$
+			\item gluon fusion: $\z{g}\z{g}$\ch{->}$\z{t}\overline{\z{t}}$
+		\end{itemize}
+	\end{itemize}
+	
+	\begin{figure}\vspace*{-10pt}
+		\centering
+		\subfig[.3]{TProd2}{.3}{$\z{q}\overline{\z{q}}$}
+		\subfig[.3]{TProd1}{.3}{gluon fusion}
+		\subfig[.3]{TProd3}{.3}{gluon fusion}
+	\end{figure}\vspace*{-10pt}
+	
+	\begin{itemize}\itemfill
+		\item at Tevatron mostly $\z{q}\overline{\z{q}}$\ch{->}$\z{t}\overline{\z{t}}$ (\ra $\z{p}\overline{\z{p}}$ collider)
+		\item at LHC gluon fusion dominant
+	\end{itemize}
+
+\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%% FRAME 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Decay Channels (2)}
 
-	\begin{itemize}\itemfill
-		\item top mostly pair produced via $\z{q}\overline{\z{q}}$\ch{->}$\z{t}\overline{\z{t}}$ or gluon fusion: $\z{g}\z{g}$\ch{->}$\z{t}\overline{\z{t}}$  
+	\begin{itemize}\itemfill 
 		\item main decay of the top pair: $\z{t}\overline{\z{t}}$\ch{->}$\z{W}^+\z{b}\z{W}^-\overline{\z{b}}$
 		\item b decay:
 	\end{itemize}
@@ -78,7 +128,7 @@
 		\item most jets from light partons (u,d,s) or gluons
 		\item lower rates from c, and b quarks
 		\item interesting physics from b \ra top, higgs, supersymmetry or new phenomena
-		\item b longer lifetime than other partons
+		\item b longer lifetime than other partons (\ra range \orderof{\SI{1}{\milli\meter}} depending on boost)
 		\item look for secondary vertices (away from primary vertex \ra interaction point)
 		\item first reconstruct primary vertex:
 		\begin{itemize}
@@ -107,12 +157,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%% FRAME 4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{$\z{t}\overline{\z{t}}$ Cross Section}
 
-	\vspace*{-10pt}\fig{ttcs}{.65}\vspace*{-10pt}
+	\vspace*{-10pt}\fig{ttcross1}{.65}\vspace*{-10pt}
 	
 	\begin{itemize}\itemfill
 		\item cross section extracted from SM
-		\item Tevatron Lumi in 1995: \SI{10e30}{\per\centi\meter\squared\per\second}
-		\begin{equation*} \z{R}_{\z{t}\overline{\z{t}}} = \upsigma_{\z{t}\overline{\z{t}}}\mathscr{L} = \SI{.1}{\hertz}\end{equation*}
+		\item Tevatron Integrated Lumi from 1993 to 1995: \SI{\sim50}{\per\pico\barn}
+		\begin{equation*} \z{R}_{\z{t}\overline{\z{t}}} = \upsigma_{\z{t}\overline{\z{t}}}\mathscr{L} = \SI{5e-6}{\hertz} \approx 1 \z{ per day} \end{equation*}
 
 	\end{itemize}
 
@@ -265,5 +315,26 @@
 		\item cross section:
 		{\usebeamercolor[fg]{title}\begin{equation*} \mathbf{\upsigma}_{\z{\textbf{t}}\overline{\z{\textbf{t}}}} = \textbf{6.8}^{\textbf{+3.6}}_{\textbf{-2.4}}\, \z{\textbf{pb}} \end{equation*}}
 	\end{itemize}
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%% FRAME 14 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Discovery at D0}
+\begin{frame}{Discovery Paper}
+	
+	\fig{D0Dis}{.84}
+	
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%% FRAME 15 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{D0 Detector}
+	
+	\fig{D0Det}{.65}
+	
+	\begin{itemize}\itemfill
+		\item no magnetic field
+		\item no vertex detector, just drift chamber
+		\item very good calorimeters
+	\end{itemize}
+
 	
 \end{frame}
