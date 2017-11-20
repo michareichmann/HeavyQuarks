@@ -285,6 +285,24 @@
 	\end{itemize}
 
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%% FRAME 13-0 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Intermezzo: The Profile Likelihood Method}
+	
+	\begin{itemize}\itemfill
+		\item one dataset with signal and a background \ra unable to describe analytically
+		\item MC simulation of both background and signal
+		\item nuisance parameter \ra e.g. unknown top mass
+		\item vary nuisance parameter \ra compare to data
+		\item fit best result
+	\end{itemize}
+	
+	\begin{figure}\vspace*{-5pt}
+		\centering
+		\subfig{proflh1}{.4}{data and MC}
+		\subfig{proflh}{.4}{likelihood fit}
+	\end{figure}\vspace*{-20pt}
+	
+\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%% FRAME 13 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Mass Reconstruction}
 	
@@ -335,6 +353,73 @@
 		\item no vertex detector, just drift chamber
 		\item very good calorimeters
 	\end{itemize}
-
 	
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%% FRAME 16 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Results}
+	
+	\begin{itemize}\itemfill
+		\item also dilepton and lepton + jets channels
+		\item b-tagging by extra muon from b decay
+		\item no vertexing \ra very good lepton identification
+		\item bg reduction by using $H_{T}$ - scalar sum of $E_{T}$ of jets or leading electron + jets
+		{\usebeamercolor[fg]{title}\begin{align*} 
+			\z{\textbf{P}}_{\z{\textbf{c}}} 	&= \textbf{\SI{2.0e-6}{} (\SI{4.6}{\upsigma})}\\
+			\z{\textbf{m}}_{\z{\textbf{top}}} 	&= \textbf{\SI[parse-numbers=false]{199\pm20\pm22}{\giga\electronvolt\per c^2}}\\
+			\mathbf{\upsigma}_{\z{\textbf{t}}\overline{\z{\textbf{t}}}} &= \textbf{\SI{6.4\pm2.2}{\pico\barn}}
+		\end{align*}}
+	\end{itemize}
+	
+	\vspace*{-12pt}
+	\fig{D0Res}{.4}
+	
+\end{frame}
+\subsection{B Tagging at CMS at $sqrt(s)$ of \SI{7}{\tera\electronvolt}}
+%%%%%%%%%%%%%%%%%%%%%%%% FRAME 16 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Introduction}
+	
+	\begin{itemize}\itemfill
+		\item variety of reconstructed objects (tracks, vertices, leptons) used as discriminator
+		\item usually one observable for simple and robust algorithms 
+		\item combination of several for higher discrimination power
+		\item discriminator thresholds in misidentification probability at $p_{\z{T}}$ of \SI{80}{\giga\electronvolt\per c}:
+		\begin{itemize}
+			\item loose (``L'') - \SI{10}{\%}
+			\item medium (``M'') - \SI{1}{\%}
+			\item tight (``T'') - \SI{.1}{\%}
+		\end{itemize}
+		\item also first finding primary vertex 
+		\item requirement of well-reconstructed tracks of high purity
+	\end{itemize}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%% FRAME 17 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Identification by Track Impact Parameters (IP)}
+
+	\begin{minipage}[c][.4\textheight]{.6\textwidth}
+		\begin{itemize}\itemfill
+		\item IP: transverse and longitudinal distance of jet direction from primary vertex
+		\item IP calculated in 3D using good resolution from the pixel detector along $z$
+		\item tracks from decay along jet-axis \ra tend to $\z{IP}>0$
+		\item strong dependence on $p_{\z{T}}$ and $\upeta$
+		\end{itemize}
+	\end{minipage}
+	\begin{minipage}{.38\textwidth}
+		\fig{BTag2}{.4}
+	\end{minipage}
+	
+	\fig{BTag1}{.4}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%% FRAME 18 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Track Counting Algorithm}
+
+	\begin{itemize}\itemfill
+	\item sort tracks by IP significance
+	\item low probability to have several jets with high significance from light partons
+	\item use sign. of 2. + 3. (1. biased) \ra \textit{Track Counting High Efficiency} (TCHE)
+	\end{itemize}
+	
+	\fig{BTag3}{.4}
+
 \end{frame}
