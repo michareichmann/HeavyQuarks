@@ -298,7 +298,7 @@
 	
 	\begin{figure}\vspace*{-5pt}
 		\centering
-		\subfig{proflh1}{.4}{data and MC}
+		\subfigp{ProfLH1}{.4}{data and MC}
 		\subfig{proflh}{.4}{likelihood fit}
 	\end{figure}\vspace*{-20pt}
 	
@@ -336,6 +336,69 @@
 	
 \end{frame}
 
+\subsection{B Tagging at CMS at $sqrt(s)$ of \SI{7}{\tera\electronvolt}}
+%%%%%%%%%%%%%%%%%%%%%%%% FRAME 16 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Introduction}
+	
+	\begin{itemize}\itemfill
+		\item variety of reconstructed objects (tracks, vertices, leptons) used as discriminator
+		\item usually one observable for simple and robust algorithms 
+		\item combination of several for higher discrimination power
+		\item discriminator thresholds in misidentification probability at $p_{\z{T}}$ of \SI{80}{\giga\electronvolt\per c}:
+		\begin{itemize}
+			\item loose (``L'') - \SI{10}{\%}
+			\item medium (``M'') - \SI{1}{\%}
+			\item tight (``T'') - \SI{.1}{\%}
+		\end{itemize}
+		\item also first finding primary vertex 
+		\item requirement of well-reconstructed tracks of high purity
+	\end{itemize}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%% FRAME 17 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Identification by Track Impact Parameters (IP)}
+
+	\begin{minipage}[c][.4\textheight]{.6\textwidth}
+		\begin{itemize}\itemfill
+		\item IP: transverse and longitudinal distance of track from primary vertex
+		\item IP calculated in 3D using good resolution from the pixel detector along $z$
+		\item tracks from decay along jet-axis \ra tend to $\z{IP}>0$
+		\item strong dependence on $p_{\z{T}}$ and $\upeta$
+		\end{itemize}
+	\end{minipage}
+	\begin{minipage}{.38\textwidth}
+		\fig{BTag2}{.4}
+	\end{minipage}
+	
+	\fig{BTag1}{.4}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%% FRAME 18 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Track Counting Algorithm}
+
+	\begin{itemize}\itemfill
+		\item IP by itself discriminating power between decay products of b and non-b jets
+		\item sort tracks by IP significance (IP/Uncertainty)
+		\item low probability to have several jets with high significance from light partons
+		\item use sign. of 2. + 3. (1. biased) \ra \textit{Track Counting High Efficiency} (TCHE)
+		\item likelihood that all tracks from one jet cone come from primary vertex \ra \textit{Jet Probability} (JP)
+	\end{itemize}
+	
+	\fig{BTag3}{.4}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%% FRAME 19 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Performance}
+
+	\vspace*{-15pt} \fig{BTagPerf}{.6}\vspace*{-10pt} 
+	
+	\begin{itemize}\itemfill
+		\item for jets with $p_{\z{T}}>\SI{60}{\giga\electronvolt\per c}$
+		\item loose selection (\SI{10}{\%}) \ra \SIrange{\sim80}{85}{\%} efficiency
+		\item tight selection (\SI{.1}{\%}) \ra \SIrange{\sim45}{55}{\%} efficiency
+	\end{itemize}
+
+\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%% FRAME 14 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Discovery at D0}
 \begin{frame}{Discovery Paper}
@@ -346,7 +409,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%% FRAME 15 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{D0 Detector}
 	
-	\fig{D0Det}{.65}
+	\vspace*{-15pt} \fig{D0Det}{.65} \vspace*{-10pt}
 	
 	\begin{itemize}\itemfill
 		\item no magnetic field
@@ -373,53 +436,4 @@
 	\vspace*{-12pt}
 	\fig{D0Res}{.4}
 	
-\end{frame}
-\subsection{B Tagging at CMS at $sqrt(s)$ of \SI{7}{\tera\electronvolt}}
-%%%%%%%%%%%%%%%%%%%%%%%% FRAME 16 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Introduction}
-	
-	\begin{itemize}\itemfill
-		\item variety of reconstructed objects (tracks, vertices, leptons) used as discriminator
-		\item usually one observable for simple and robust algorithms 
-		\item combination of several for higher discrimination power
-		\item discriminator thresholds in misidentification probability at $p_{\z{T}}$ of \SI{80}{\giga\electronvolt\per c}:
-		\begin{itemize}
-			\item loose (``L'') - \SI{10}{\%}
-			\item medium (``M'') - \SI{1}{\%}
-			\item tight (``T'') - \SI{.1}{\%}
-		\end{itemize}
-		\item also first finding primary vertex 
-		\item requirement of well-reconstructed tracks of high purity
-	\end{itemize}
-
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%% FRAME 17 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Identification by Track Impact Parameters (IP)}
-
-	\begin{minipage}[c][.4\textheight]{.6\textwidth}
-		\begin{itemize}\itemfill
-		\item IP: transverse and longitudinal distance of jet direction from primary vertex
-		\item IP calculated in 3D using good resolution from the pixel detector along $z$
-		\item tracks from decay along jet-axis \ra tend to $\z{IP}>0$
-		\item strong dependence on $p_{\z{T}}$ and $\upeta$
-		\end{itemize}
-	\end{minipage}
-	\begin{minipage}{.38\textwidth}
-		\fig{BTag2}{.4}
-	\end{minipage}
-	
-	\fig{BTag1}{.4}
-
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%% FRAME 18 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Track Counting Algorithm}
-
-	\begin{itemize}\itemfill
-	\item sort tracks by IP significance
-	\item low probability to have several jets with high significance from light partons
-	\item use sign. of 2. + 3. (1. biased) \ra \textit{Track Counting High Efficiency} (TCHE)
-	\end{itemize}
-	
-	\fig{BTag3}{.4}
-
 \end{frame}
